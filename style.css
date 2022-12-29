@@ -60,7 +60,13 @@ h1, h2, h3 {
     margin: 0;
 }
 
-.wut {
+.wrap {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.twerk {
     margin: 25px 0;
     padding: 10px 0;
     display: flex;
@@ -68,13 +74,29 @@ h1, h2, h3 {
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-between;
-  }
+}
 
-.space {
-    position: relative;
-    width: 50%;
-    margin-left: 25px;
-    margin-top: 5px;
+.twerk h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 4px solid rgb(144, 199, 130);
+    font-size: 4vw;
+    line-height: 1.1;
+}
+
+.twerk div {
+    flex: 0 0 77%;
+}
+
+.twerk p {
+    margin-bottom: 20px;
+}
+
+.art {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .flexy img {
@@ -86,10 +108,6 @@ h1, h2, h3 {
 .flexy {
     position: relative;
     width: 50%;
-}
-
-.space {
-    background-image: ;
 }
 
 .flexy {
@@ -109,14 +127,34 @@ h1, h2, h3 {
     font-size: 0.rem;
 }
 
-h3 span {
-    color: white;
+.flexy:first-child {
+    min-height: 200px;
+    min-width: 200px;
+    flex-basis: 100%;
 }
 
+.flexy:hover {
+    background-color: blueviolet;
+}
 
+.flexy:visited {
+    background-color: rgb(144, 199, 130);
+}
 
-.contactos { 
-    display: block;
+.space {
+    background-image: url(./images/paintings/space.jpg);
+}
+
+.charcoal {
+    background-image: url(./images/paintings/charcoal.jpg);
+}
+
+.shooter {
+    background-image: url(./images/paintings/shooter.jpg);
+}
+
+.cali {
+    background-image: url(./images/paintings/cali.jpg);
 }
 
 .contactos img {
@@ -125,8 +163,12 @@ h3 span {
     align-items: flex-end;
 }
 
-.contactos:hover {
-    background-color: blueviolet;
+.contactos address a {
+    color: var(--Third);
+    padding: 5px;
+    text-decoration: none;
+    font-style: normal;
+    margin: 0 0.2rem 0.1rem;
 }
 
 @media screen and (max-width: 1000px) {
