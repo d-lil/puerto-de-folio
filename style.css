@@ -2,6 +2,12 @@
    box-sizing: border-box; 
 }
 
+:root {
+    --w: white;
+    --g: rgb(144, 199, 130);
+    --d: rgb(15, 54, 77);
+    --bv: blueviolet;
+}
 
 body {
     margin: 0;
@@ -10,7 +16,7 @@ body {
     font-weight: normal;
     font-style: normal;
     text-shadow: 2px 5px 5px #000;
-    color: white;
+    color: var(--w);
     line-height: 2;
     font-size: larger;
     background-image: url(./images/background/city.png);
@@ -18,24 +24,53 @@ body {
     background-attachment: fixed;
 }
 
+h1, h2, h3 {
+    margin: 0;
+}
 
 header {
+    padding: 15px 0 15px 0;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
     font-size: 25px;
     background: -webkit-linear-gradient(rgb(251, 255, 0), rgb(44, 206, 255));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent
 }
 
+nav a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: var(--second);
+    margin: 10px;
+    background-image: linear-gradient(180deg, var(--g) 0%, var(--bv) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0em;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+    font-size: 1.5rem;
+}
+  
+nav a:last-child {
+    margin-right: 0;
+}
+  
+nav a:hover {
+    background-size: 100% 100%;
+}
+
+
 .sloppy-banner {
-    background-color: rgb(15, 54, 77);
+    background-color: var(--d);
     background-image: url(./images/background/cig.jpg);
     background-size: cover;
     background-position: center;
     background-blend-mode: soft-light;
     height: 32vh;
-    color: rgba(238,238,247,1);
+    color: var(--w);
     padding: 1% 2%;
     display: flex;
     justify-content: flex-end;
@@ -49,16 +84,12 @@ header {
 
 .sloppy-banner h2 {
     background-color: rgb(211, 127, 141);
-    color: white;
+    color: var(--w);
     padding: 5px 2px;
     font-size: 2rem;
     line-height: 1;
     display: inline-block;
   }
-
-h1, h2, h3 {
-    margin: 0;
-}
 
 .wrap {
     max-width: 90%;
@@ -66,23 +97,21 @@ h1, h2, h3 {
     margin-right: auto;
 }
 
+.title {
+    flex: 0 0 15%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 4px solid var(--g);
+    font-size: 4vw;
+    line-height: 1;
+}
+
 .twerk {
     margin: 25px 0;
     padding: 10px 0;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     align-items: stretch;
-    justify-content: space-between;
-}
-
-.twerk h2 {
-    flex: 0 0 20%;
-    text-align: right;
-    padding-right: 15px;
-    border-right: 4px solid rgb(144, 199, 130);
-    font-size: 4vw;
-    line-height: 1.1;
 }
 
 .twerk div {
@@ -90,55 +119,51 @@ h1, h2, h3 {
 }
 
 .twerk p {
+    display: flex;
+    align-items: flex-start;
+    text-align:left;
     margin-bottom: 20px;
+    padding-left: 15px;
 }
 
 .art {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.flexy img {
-    width: 100%;
-    height:auto;
-}
-
-
-.flexy {
-    position: relative;
-    width: 50%;
+    align-items: center;
+    padding-left: 15px;
 }
 
 .flexy {
-    border: 5px solid rgb(144, 199, 130);
-    background-color: rgb(15, 54, 77);
-    color: white;
-    max-height: 120px;
+    border: 5px solid var(--g);
+    background-color: var(--d);
+    color: var(--w);
+    min-height: 300px;
+    max-height: 400px;
     flex-basis: calc(50% - 1em);
     display: flex;
-    align-items: flex-end;
+    flex-wrap: wrap;
+    align-content: center;
     padding: 0 0 20px 0;
-    margin: 0.5em;
+    margin: .25em;
     text-decoration: none;
     background-blend-mode: soft-light;
-    background-size: 120%;
+    background-size: 100%;
     transition: all 0.5s;
-    font-size: 0.rem;
+    font-size: 0 rem;
 }
 
 .flexy:first-child {
-    min-height: 200px;
-    min-width: 200px;
+    min-height: 400px;
     flex-basis: 100%;
 }
 
 .flexy:hover {
-    background-color: blueviolet;
+    background-color: var(--bv);
 }
 
-.flexy:visited {
-    background-color: rgb(144, 199, 130);
+.bloody {
+    background-image: url(./images/paintings/blood.jpg);
 }
 
 .space {
@@ -157,13 +182,19 @@ h1, h2, h3 {
     background-image: url(./images/paintings/cali.jpg);
 }
 
-.contactos img {
+.iconic div {
+    display: flex;
+    justify-content: center;
+    margin-right: 8rem;
+}
+
+.iconic img {
     height: 50px;
     max-width: 50px;
     align-items: flex-end;
 }
 
-.contactos address a {
+.iconic address a {
     color: var(--Third);
     padding: 5px;
     text-decoration: none;
@@ -189,12 +220,12 @@ h1, h2, h3 {
       justify-content: center;
     }
   
-    .contactos > h2 
-    .contactos > div {
+    .iconic > h2 
+    .iconic > div {
     flex: 0 0 100%;
     }
   
-    .contactos > h2 {
+    .iconic > h2 {
     border-right: none;
     border-bottom: 4px solid var(--First);
     margin-bottom: 20px;
@@ -218,7 +249,7 @@ h1, h2, h3 {
       text-align: center;
     }
   
-    .contactos .iconic {
+    .iconic {
       flex-direction: column;
       align-items: flex-start;
     }
