@@ -50,4 +50,5 @@ SOFTWARE.
 
 ## Screenshot
 
-![Alt text](.)
+![My Image](./images/screenshot/ss.png)
+![My Image](./images/screenshot/ss1.png)
