@@ -56,7 +56,3 @@ SOFTWARE.
 
 ![My Image](./images/screenshot/ss.png)
 ![My Image](./images/screenshot/ss1.png)
-<<<<<<< HEAD
-
-=======
->>>>>>> 6abd0e59050c85681d46fbce3ce8845b06bc5d36
