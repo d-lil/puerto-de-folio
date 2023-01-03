@@ -50,5 +50,5 @@ SOFTWARE.
 
 ## Screenshot
 
-![Alt text](./images/screenshot/ss.png "screenshot of top half of website")
-![Alt text](./images/screenshot/ss1.png "screenshot of bottom half of website")
+![My Image](./images/screenshot/ss.png)
+![My Image](./images/screenshot/ss1.png)
