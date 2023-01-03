@@ -8,7 +8,11 @@ Having an idea in mind- I was not able to fully complete what I wanted (yet), si
 
 ## Usage
 
-Simply open the page. The links at the top will take you to the separate sections on the page. The pictures are links and will take you to a new tab to view each picture full-size and individually. The icons on the bottom of the page will take you to a way to call me, email me, or view my Instagram.
+Simply open the page.
+
+https://d-lil.github.io/puerto-de-folio/
+
+ The links at the top will take you to the separate sections on the page. The pictures are links and will take you to a new tab to view each picture full-size and individually. The icons on the bottom of the page will take you to a way to call me, email me, or view my Instagram.
 
 ## Credits
 
