@@ -230,11 +230,11 @@ nav a:hover {
   
     .iconic > h2 {
     border-right: none;
-    border-bottom: 4px solid var(--First);
-    margin-bottom: 20px;
+    border-bottom: 4px solid var(--g);
+    margin-bottom: 10px;
     padding-bottom: 10px;
     text-align: left;
-    font-size: 7vw;
+    font-size: 7vh;
     }
 }
 
