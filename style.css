@@ -101,7 +101,8 @@ nav a:hover {
 }
 
 .title {
-    flex: 0 0 15%;
+    flex: 1 0 15%;
+    min-width: 7em;
     text-align: right;
     padding-right: var(--px);
     border-right: 4px solid var(--g);
